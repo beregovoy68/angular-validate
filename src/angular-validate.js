@@ -26,6 +26,8 @@
                     form.numberOfInvalids = function () {
                         return validator.numberOfInvalids();
                     };
+
+                    form.invalid = validator.invalid;
                 }
             };
         })
