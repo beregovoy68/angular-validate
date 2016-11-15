@@ -27,7 +27,9 @@
                         return validator.numberOfInvalids();
                     };
 
-                    form.invalid = validator.invalid;
+                    form.invalid = function () {
+                        return validator.invalid;
+                    };
                 }
             };
         })
